@@ -1,0 +1,356 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+}
+body{
+    overflow-x: hidden;
+}
+.top-intro-container{
+    background-image: url("./images/image/banner_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 7rem;
+    align-items: center;
+}
+.header-container .title_logo img{
+    height: 1.6rem;
+    aspect-ratio: "16:9";
+
+}
+.header-navigation-bar{
+    display: flex;
+    list-style-type: none;
+    gap: 1.7em;
+    margin: auto 0;
+}
+.header-navigation-bar li a{
+    font-family: "Roboto",serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+}
+.header-navigation-bar li a:hover{
+    color:#2885ff;
+}
+.navigation_bar{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-container .test-button-container .btn-primary{
+    height: 2.4rem;
+    font-size:0.9rem;
+    --bs-border-radius: 0.25rem;
+}
+.header-container .test-button-container .btn-primary a{
+    color: white;
+    text-decoration: none;
+}
+.home-area{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:5% ;
+}
+.home-area .section-content-container p:nth-child(1){
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.home-area .home-area-tagline{
+    font-family: "Playfair Display";
+    font-size: 2.7rem;
+    font-weight: 700;
+    
+}
+.home-area .section-content-container{
+    margin: 0 0 0 10%;
+    padding-top: 5%;
+}
+.home-area .section-content-container {
+    
+}
+.home-area .section-image-container img{
+    height: 27rem;
+    aspect-ratio: "2:1";
+    animation: imageAnimate 2s ease-in-out alternate infinite;
+}
+
+.header-container .section-content-container .btn-primary{
+    font-size: 0.9rem;
+    height: 2.4rem;
+    --bs-border-radius: 0.2;
+    --bs-link-color:white;
+}
+.header-container .section-content-container .test-button-container .btn-primary a{
+    color:white !important;
+    text-decoration: none;
+}
+.about-section{
+    background-image: url("./images/image/about_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.about-section .about-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 10%;
+    gap: 5%;
+
+}
+.about-section .section-image-container img{
+    height: 27rem;
+    aspect-ratio: "2:1";
+
+}
+@keyframes imageAnimate{
+    0%{
+        transform: translateY(-2.5%);
+    }
+    100%{
+        transform:translateY(2.5%);
+    }
+
+}
+.about-area .section-content-container h2{
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 5% 0;
+}
+.about-area .section-content-container p{
+    color: rgba(103, 103, 103, 0.882);
+    font-weight: 400;
+    
+}
+
+.services-section{
+    background-image: url("./images/image/about_bg -2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10% 0;
+}
+.service-title{
+    font-family: "Playfair Display";
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.services-area h2{
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 5% 0;
+    text-align: center;
+}
+.services-area .services-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 0 10%;
+}
+.services-area .services-container .card{
+    box-shadow: 2px 2px 15px lightgrey;
+}
+.workshop-section{
+    margin: 5% 0;
+    background-image: url("./images/image/about_bg.png");
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.workshop-area h3{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin:5% 0;
+}
+.workshop-section .workshop-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.workshop-section .workshop-container .card{
+    max-height: 400px;
+    box-shadow:2px 5px 20px rgb(159, 159, 159);
+}
+.workshop-section .workshop-container .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.workshop-section .workshop-container .card img{
+    height: 50%;
+}
+.workshop-section .workshop-container .card button a{
+    color:white;
+    text-decoration: none;
+
+}
+.newsletter-section {
+    margin: 10% 0 5% 0;
+    background-image: url("./images/image/about_bg -2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.newsletter-section .newsletter-area h2{
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 800;
+
+}
+.newsletter-section .newsletter-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 5% 0;
+}
+.newsletter-section .newsletter-container .card {
+    box-shadow: 2px 2px 20px lightgrey;
+}
+.newsletter-section .newsletter-container .card img{
+    max-height: 400px;
+    aspect-ratio: 9/16;
+}
+.newsletter-section .newsletter-container .card .card-title{
+    text-align: center;
+    font-size: 1rem;
+}
+.articles-section{
+    margin: 10% 0;
+    background-image: url("./images/image/about_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.articles-area h3{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+.articles-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.articles-container .card{
+    box-shadow: 2px 2px 15px lightgrey;
+}
+.articles-container .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.faqs-section{
+    background-image: url("./images/image/about_bg -2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.faqs-section h3{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin:10% 5%;
+}
+.faqs-section .faqs-container{
+    margin: 5% 10% 2% 10%;
+}
+.footer-area{
+    background-color: #08162c;
+    padding: 3%;
+  }
+  .footer-area .links-container img{
+    height: 1.6rem;
+    aspect-ratio: "16:9";
+  }
+  .footer-area .title-name-container{
+    display: flex;
+    margin-bottom: 2%;
+  }
+  .footer-area .title-name-container .title-name-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    background:linear-gradient(120deg,rgb(23, 143, 255),rgb(22, 166, 209));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+  
+  }
+  .footer-area .title-name-container .title-name-small-ball{
+    background:linear-gradient(120deg,rgb(23, 143, 255),rgb(22, 166, 209));
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+      
+  }
+  .footer-area .links-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  .footer-area .links-container .portfolio-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins";
+  }
+  .footer-area .links-container h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 5%;
+  }
+  .footer-area .links-container p{
+    color: lightgrey;
+    font-size: 1rem;
+  }
+  
+  .footer-area .links-container ul {
+    list-style-type: none;
+  }
+  .footer-area .social-media-links{
+    display: flex;
+    gap: 20%;
+    margin: 5%;
+  }
+  .footer-area .social-media-links li{
+    background-color: #0b2753;
+    padding: 10%;
+    border-radius: 50%;
+  }
+  .footer-area .social-media-links li i{
+    font-size: 1.5rem;
+  }
+  .footer-area .links-container ul li {
+    margin: 2%;
+    border-radius: 50%;
+  }
+  .footer-area .links-container ul li a{
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.2s ease all;
+  }
+  .footer-area .links-container ul li a:hover{
+    color:#2885ff;
+  }

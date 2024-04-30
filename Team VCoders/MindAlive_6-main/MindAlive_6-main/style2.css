@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: white;
+    width: 100vw;
+    height: 85vh;
+    /* overflow: hidden; */
+}
+header{
+    box-shadow: 0 2px 15px lightgrey;
+}
+.header-container{
+    display: flex;
+    justify-content: flex-start;
+    height: 5rem;
+    align-items: center;
+    margin: 0 5%;
+}
+.header-container img{
+    aspect-ratio: "5/3";
+    height: 1.7rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main .container{
+    height: 85%;
+    width: 90%;
+    background-color: white;
+    border-radius:10px;
+    box-shadow: 0 0 50px rgb(226, 226, 226);
+
+}
+.container .question{
+    margin:3% 5%;
+
+}
+.container .question h5{
+    font-family: "Rubik";
+    font-size: 1.1rem;
+    color: grey;
+}
+.container .question p{
+    margin: 2px 0 0 0;
+    font-family: "Rockwell";
+    font-size: 1.4rem;
+    color: rgb(84, 84, 84);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.ratings{
+    animation: fadeIn;
+    animation-delay: 0.5s;
+    transition: all 1s;
+}
+.ratings .scale{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius:8px;
+}
+.ratings .scale p{
+    font-family: "Roboto";
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+.rating-bubbles {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin: 2% 0 0 0;
+}
+.rating-bubbles .bubbles{
+    box-sizing: border-box;
+    border-radius:50%;
+    border:5px solid rgba(0, 0, 0, 0.519);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bubbles p{
+    background-color: white !important;
+    font-family: Rockwell;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 120%;
+}
+#bubble_5{
+    border-color: rgb(0, 174, 0);
+}
+#bubble_5 *{
+    background-color: rgb(0, 169, 0);
+}
+#bubble_4{
+    border-color: rgb(130, 174, 0);
+}
+#bubble_4 *{
+    background-color: rgb(130, 174, 0);
+}
+#bubble_3{
+    border-color: rgb(207, 197, 0);
+}
+#bubble_3 *{
+    background-color: rgb(207, 197, 0);
+}
+#bubble_2{
+    border-color: rgb(255, 162, 0);
+}
+#bubble_2 *{
+    background-color: rgb(255, 162, 0);
+}
+#bubble_1{
+    border-color: rgb(255, 0, 0);
+}
+#bubble_1 *{
+    background-color: rgb(255, 0, 0);
+}
+.selected{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.519);
+    border-radius:50%;
+    height: 30px;
+    width: 30px;
+}
+.bubbles:focus .selected{
+    display: block;
+}
+.control_buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2%;
+    margin: 10% 0;
+}
+.control_buttons *{
+    height: 3rem;
+    border-radius:5px;
+    width: 6rem;
+    box-sizing: border-box;
+    border:none;
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color:white;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px lightgrey;
+}
+.control_buttons #prev{
+    border: 3px solid grey;
+    background-color:lightgrey;
+    font-weight: 700;
+}
+.control_buttons #next{
+    background-color: #003366;
+    color: white;
+    margin: 0 5% 0 0;
+}
+.control_buttons #submit{
+    margin: 0 5% 0 0;
+    display: none;
+    color: white;
+    background-color: #003366;
+}
