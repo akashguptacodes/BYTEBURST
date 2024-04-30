@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories</title>
+  <link rel="stylesheet"href="styly.css">
+</head>
+<body>
+  <div class="container">
+    <div class="gallery">
+      <div class="img_box"><h3>The beginning</h3></div>
+      <div class="img_box"><h3>Preparations</h3></div>
+      <div class="img_box"><h3>Group Photos</h3></div>
+      <div class="img_box"><h3>And Many More</h3></div>
+    </div>
+  </div>
+</body>
+</html> -->
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #000;
+      }
+      
+  
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+  
+      .image-container {
+          position: relative;
+          width: 23%;
+          margin-bottom: 20px;
+          overflow: hidden;
+      }
+  
+      .image-container img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease;
+      }
+  
+      .image-container:hover img {
+          transform: scale(1.1);
+      }
+  
+      .image-container p {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          margin: 0;
+          padding: 5px 10px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          font-size: 14px;
+      }
+  </style>
+  </head>
+  <body>
+  
+  <div class="container">
+      <div class="image-container">
+          <img src="image3.jpeg" alt="Image 1">
+          <p>Memory 1</p>
+      </div>
+      <div class="image-container">
+          <img src="image1.jpeg" alt="Image 2">
+          <p>Memory 2</p>
+      </div>
+      <div class="image-container">
+          <img src="image2.jpeg" alt="Image 3">
+          <p>Memory 3</p>
+      </div>
+      <div class="image-container">
+          <img src="image4.jpeg" alt="Image 4">
+          <p>Memory 4</p>
+      </div>
+      
+  </div>
+  
+  </body>
+  </html>
