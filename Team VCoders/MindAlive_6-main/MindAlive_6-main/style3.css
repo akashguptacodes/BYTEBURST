@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    box-shadow: 0 0 15px rgb(160, 160, 160);
+    z-index: 5;
+}
+.header-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    gap: 10%;
+
+}
+.header-area .title_logo img{
+    aspect-ratio: "16:9";
+    height: 1.6rem;
+}
+.header-area .navigation-container ul{
+    list-style-type: none;
+    display: flex;
+}
+.header-area .navigation-container li{
+    margin: 0 5%;
+}
+.header-area ul li a{
+    white-space: nowrap;
+    font-size: 0.96rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+}
+.header-area ul li a:hover{
+    color: #0074D9;
+}
+.condition-test{
+    margin-top: 0;
+}
+.image-condition{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(160deg,#a2ddbc,#7bc198);
+}
+.section-description{
+    margin: 0 10%;
+}
+
+.section-description .condition{
+    font-weight: 600;
+    font-family: "Roboto";
+    font-size: 2.0rem;
+    margin-bottom: 2%;
+}
+.section-description p{
+    font-size: 1.2rem;
+}
+.section-image{
+    margin: 0 10%;
+}
+.image-condition .section-image img{
+    aspect-ratio: "2:1";
+    height: 22rem;
+    margin: 10% 0;
+    animation: 2s alternate infinite imageAnimate ease-in-out;
+}
+@keyframes imageAnimate{
+    0%{
+        transform: translateY(-2.5%);
+    }
+    100%{
+        transform:translateY(2.5%);
+    }
+
+}
+.section-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#condition-text{
+    text-transform: uppercase;
+    color: rgb(14, 60, 34);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.workshop-section{
+    margin: 5% 0;
+    background-image: url("./images/image/about_bg.png");
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.workshop-area h3{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin:5% 0;
+}
+.workshop-section .workshop-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.workshop-section .workshop-container .card{
+    max-height: 400px;
+    box-shadow:2px 5px 20px rgb(159, 159, 159);
+}
+.workshop-section .workshop-container .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.workshop-section .workshop-container .card img{
+    height: 50%;
+    aspect-ratio: "2:1";
+}
+.workshop-section .workshop-container .card button a{
+    color:white;
+    text-decoration: none;
+
+}
+.articles-section{
+    margin: 10% 0;
+    background-image: url("./images/image/about_bg\ -2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.articles-area h3{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+.articles-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.articles-container .card{
+    box-shadow: 2px 2px 15px lightgrey;
+}
+.articles-container .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+#condition-2{
+    background:linear-gradient(120deg,#f1bd9e,#f3cfb1,#f7e1cc,#fae7e4,#fcf4f1);
+}
+#condition-2 .condition{
+    color: #3b1704;
+}
+#condition-1,#condition-2{
+    display: none;
+}
+#condition-3{
+    background:linear-gradient(120deg,#ff3864,#fc7995,#ff99ad);
+}
+#condition-3 .condition{
+    color: #400329;
+}
+.faqs-section{
+    background-image: url("./images/image/about_bg -2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.faqs-section h3{
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin:10% 5%;
+}
+.faqs-section .faqs-container{
+    margin: 5% 10% 2% 10%;
+}
