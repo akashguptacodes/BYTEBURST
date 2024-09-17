@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    padding: 2.2rem;
+    & .heading{
+        font-size: 4.4rem;
+        color:rgb(240, 224, 224);
+    display: grid;
+    place-items: center;
+}
+    }.grid-two-column{
+        display: flex;;
+        display: grid;
+        grid-template-columns:repeat(2,1fr) ;
+    }
+    
+         .img{
+            margin-left: 30px;
+            transition: all 0.2s linear;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            -ms-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            display: grid;
+            place-items: center;
+}#img1{
+    border-radius: 20%;
+    background-color: rgb(215, 206, 238);
+    border: 2px solid black;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}#img2{
+    border-radius: 20%;
+    background-color: rgb(215, 206, 238);
+    border: 2px solid black;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+    
+.img:hover{
+    scale: 1.1rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+.content1{
+    display: grid;
+    place-items: center;
+    & .para2{
+        color: rgb(236, 227, 227);
+        font-size: 1.8rem;
+    }
+}
+.btn{
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: rgb(23, 19, 19);
+    color: rgb(228, 228, 228);
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}.ticket{
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background: #11441f;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.img{
+    scale: 1.1;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+.btn{
+    font-size: 1.5rem;
+}

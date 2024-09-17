@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    & .grid-four-column{
+        padding: 2.2rem;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        background-color: black;
+        color: white;
+        & .lists ,a ,li{
+            list-style-type: none;
+            text-decoration: none;
+            line-height: 1rem;
+            color: white;
+            font-size: 1.6rem;
+            line-height:2rem;
+        }
+    }
+}
+.icons{
+    padding-top: 3rem;
+    .fa-brands:hover{
+        background-color:#C0D6E8 ;
+        color:#2C4E80;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+    & .fa-brands{
+        padding:0.8rem;
+        border-radius: 50%;
+        margin-right:2.4rem;
+        color:palevioletred;
+        background-color:pink;
+        font-size:1.8rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}
+.icons{
+& .fa-brands{
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+}
+.fig{
+    padding-bottom: 1.2rem;
+}
+.hit, li:hover{
+    color: blue;
+}
+.fig:hover{
+    color: blue;
+}
+.header:hover{
+    color: blue;
+}
+.header{
+    font-size: 2rem;
+}
+.para1{
+    font-size: 1.2rem;
+}
